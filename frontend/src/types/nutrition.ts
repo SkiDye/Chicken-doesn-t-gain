@@ -94,4 +94,5 @@ export interface MenuItem {
   nutrition: NutritionData;
   healthScore?: number;
   imageUrl?: string;
+  imageUrls?: string[]; // 다중 이미지 URL (폴백용)
 }

@@ -646,7 +646,7 @@ const kyochonHoneyNutrition = {
 };
 
 const puradakToowoomNutrition = {
-  name: '푸라닭 투움바 치킨 (484g)',
+  name: '푸라닭 나폴리 투움바 (484g)',
   brand: '푸라닭',
   category: 'korean_chicken',
   calories: 1098,
@@ -774,6 +774,22 @@ export const menuItems: MenuItem[] = [
     nutrition: bhcBburingNutrition,
     healthScore: calculateHealthScore(bhcBburingNutrition),
     imageUrl: 'http://www.bhc.co.kr/upload/bhc/menu/뿌링클_한마리_410x271.jpg',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'http://www.bhc.co.kr/upload/bhc/menu/뿌링클_한마리_410x271.jpg',
+      'https://www.bhc.co.kr/upload/bhc/menu/뿌링클_한마리_410x271.jpg',
+      'http://m.bhc.co.kr/upload/bhc/menu/뿌링클_한마리_410x271.jpg',
+      'http://www.bhc.co.kr/upload/bhc/menu/뿌링클.jpg',
+      'http://www.bhc.co.kr/upload/bhc/menu/bburing.jpg',
+      // 2. 나무위키 CDN
+      'https://i.namu.wiki/i/HTT4dbDwj3h1prYx_YbIZvChVFu486Xjdn3J6wrS_pWjipDNm6WeDjlVctKJlqPOyX3bSm7zlsvySHi_tDQHTbEu2H2UgXGLuRjMq-VfELki7zyUnF3TZ05lD9QJ-Axeo0B7FPDboyQZl7y5aTBp5A.webp',
+      // 3. BHC 몰
+      'https://bhcmall.co.kr/upload/product/뿌링클.jpg',
+      // 4. 배달앱 썸네일
+      'https://cdn.baemin.com/bhc/bburing.jpg',
+      // 5. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/202410/bhc-bburing.jpg',
+    ],
   },
   {
     id: 'kyochon-red-1',
@@ -781,6 +797,20 @@ export const menuItems: MenuItem[] = [
     nutrition: kyochonRedNutrition,
     healthScore: calculateHealthScore(kyochonRedNutrition),
     imageUrl: 'https://www.kyochon.com/uploadFiles/TB_ITEM/list_레드+허니갈릭.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/list_레드+허니갈릭.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/레드허니갈릭.png',
+      'https://m.kyochon.com/uploadFiles/TB_ITEM/list_레드+허니갈릭.png',
+      'https://www.kyochon.com/uploadFiles/PRODUCT/red-honey-garlic.jpg',
+      // 2. 배달앱
+      'https://cdn-mart.baemin.com/kyochon/red-honey.jpg',
+      // 3. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/kyochon-red-honey.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/kyochon/red-honey.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/kyochon-red-honey.webp',
+    ],
   },
   {
     id: 'puradak-fried-1',
@@ -788,6 +818,22 @@ export const menuItems: MenuItem[] = [
     nutrition: puradakFriedNutrition,
     healthScore: calculateHealthScore(puradakFriedNutrition),
     imageUrl: 'https://puradakchicken.com/upload/menu/KakaoTalk_20250212_120903683_01.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://puradakchicken.com/upload/menu/KakaoTalk_20250212_120903683_01.png',
+      'https://puradakchicken.com/upload/menu/KakaoTalk_20250212_120903683_010.png',
+      'https://puradakchicken.com/upload/menu/씬후라이드.png',
+      'https://puradakchicken.com/upload/menu/thin-fried.png',
+      'https://www.puradakchicken.com/upload/menu/씬후라이드.jpg',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/puradak/thin-fried.jpg',
+      'https://sitem.ssgcdn.com/45/38/54/item/1000545380139_i1_1200.jpg',
+      'https://cdn.lotteon.com/puradak/thin-fried.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/puradak/thin-fried.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/puradak-thin-fried.webp',
+    ],
   },
   {
     id: 'puradak-sauce-half',
@@ -795,6 +841,17 @@ export const menuItems: MenuItem[] = [
     nutrition: puradakSauceNutrition,
     healthScore: calculateHealthScore(puradakSauceNutrition),
     imageUrl: 'https://puradakchicken.com/upload/menu/메뉴-28.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://puradakchicken.com/upload/menu/메뉴-28.png',
+      'https://puradakchicken.com/upload/menu/달콤양념.png',
+      'https://puradakchicken.com/upload/menu/sweet-chicken.jpg',
+      'https://www.puradakchicken.com/upload/menu/양념치킨.jpg',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/puradak/sweet.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/puradak/sweet-chicken.jpg',
+    ],
   },
   {
     id: 'hosigi-fried-1',
@@ -802,6 +859,20 @@ export const menuItems: MenuItem[] = [
     nutrition: hosigiFriedNutrition,
     healthScore: calculateHealthScore(hosigiFriedNutrition),
     imageUrl: 'https://cdn.imweb.me/thumbnail/20240905/5359bf2a00714.png',
+    imageUrls: [
+      // 1. 공식 홈페이지 (imweb CDN)
+      'https://cdn.imweb.me/thumbnail/20240905/5359bf2a00714.png',
+      'https://cdn.imweb.me/upload/S20190819a0ad1cd83c4f8/후라이드.png',
+      'http://www.9922.co.kr/upload/menu/fried.jpg',
+      'http://9922.co.kr/images/menu/후라이드.png',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/hosigi/fried.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/hosigi/fried.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/hosigi/fried.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/hosigi-fried.webp',
+    ],
   },
   {
     id: 'hosigi-sauce-1',
@@ -809,6 +880,20 @@ export const menuItems: MenuItem[] = [
     nutrition: hosigiSauceNutrition,
     healthScore: calculateHealthScore(hosigiSauceNutrition),
     imageUrl: 'https://cdn.imweb.me/thumbnail/20250619/0a2bcdc11e148.jpg',
+    imageUrls: [
+      // 1. 공식 홈페이지 (imweb CDN)
+      'https://cdn.imweb.me/thumbnail/20250619/0a2bcdc11e148.jpg',
+      'https://cdn.imweb.me/upload/S20190819a0ad1cd83c4f8/양념치킨.png',
+      'http://www.9922.co.kr/upload/menu/yangnyeom.jpg',
+      'http://9922.co.kr/images/menu/양념.png',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/hosigi/yangnyeom.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/hosigi/sauce.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/hosigi/yangnyeom.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/hosigi-yangnyeom.webp',
+    ],
   },
   {
     id: '60gye-ganji-boneless-300',
@@ -816,6 +901,22 @@ export const menuItems: MenuItem[] = [
     nutrition: gye60GanjiNutrition,
     healthScore: calculateHealthScore(gye60GanjiNutrition),
     imageUrl: 'https://www.60chicken.com/theme/basic/img/sub/menu_img32.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://www.60chicken.com/theme/basic/img/sub/menu_img32.png',
+      'https://www.60chicken.com/theme/basic/img/sub/menu_img08.jpg',
+      'https://www.60chicken.com:443/theme/basic/img/sub/menu_img08.jpg',
+      'https://www.60chicken.com/theme/basic/img/sub/menu_img32.jpg',
+      'https://60chicken.co.kr/bbs/data/menu/간지치킨.jpg',
+      'http://www.60chicken.com/images/menu/ganji.png',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/60gye/ganji.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/60gye/ganji.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/60gye/ganji-chicken.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/60gye-ganji.webp',
+    ],
   },
   {
     id: 'hosigi-soy-1',
@@ -823,6 +924,20 @@ export const menuItems: MenuItem[] = [
     nutrition: hosigiSoyNutrition,
     healthScore: calculateHealthScore(hosigiSoyNutrition),
     imageUrl: 'https://cdn.imweb.me/thumbnail/20240905/ccb3d5f96b2b3.png',
+    imageUrls: [
+      // 1. 공식 홈페이지 (imweb CDN)
+      'https://cdn.imweb.me/thumbnail/20240905/ccb3d5f96b2b3.png',
+      'https://cdn.imweb.me/upload/S20190819a0ad1cd83c4f8/간장치킨.png',
+      'http://www.9922.co.kr/upload/menu/soy-sauce.jpg',
+      'http://9922.co.kr/images/menu/간장.png',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/hosigi/soy.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/hosigi/ganjang.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/hosigi/ganjang.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/hosigi-ganjang.webp',
+    ],
   },
   {
     id: 'bhc-matchoking-1',
@@ -830,6 +945,23 @@ export const menuItems: MenuItem[] = [
     nutrition: bhcMatchokingNutrition,
     healthScore: calculateHealthScore(bhcMatchokingNutrition),
     imageUrl: 'http://www.bhc.co.kr/upload/bhc/menu/맛초킹_한마리_410x271.jpg',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'http://www.bhc.co.kr/upload/bhc/menu/맛초킹_한마리_410x271.jpg',
+      'https://www.bhc.co.kr/upload/bhc/menu/맛초킹_한마리_410x271.jpg',
+      'http://m.bhc.co.kr/upload/bhc/menu/맛초킹.jpg',
+      'http://www.bhc.co.kr/upload/bhc/menu/matchoking.jpg',
+      // 2. 나무위키 CDN
+      'https://i.namu.wiki/i/Wfr6feUru3DDX06xHC-W72ISVXh9YngFUVYIZj_3RvWI23C42u-0twUQ3LcfD3WqojJfO0iXBHfnvZJrfXCCzMZGtefH77J7ITeQp4jEzG0RTdSowWnOQqKUj6SFIumETMnePyzzmOhQjnsU6LHhDw.webp',
+      // 3. BHC 몰
+      'https://bhcmall.co.kr/goods/detail.asp?gno=737',
+      'https://bhcmall.co.kr/upload/product/맛초킹.jpg',
+      // 4. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/bhc-matchoking.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/bhc/matchoking.jpg',
+      // 5. 11번가
+      'https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/bhc-matchoking.jpg',
+    ],
   },
   {
     id: 'kyochon-red-solo-1',
@@ -837,6 +969,23 @@ export const menuItems: MenuItem[] = [
     nutrition: kyochonRedNutritionSolo,
     healthScore: calculateHealthScore(kyochonRedNutritionSolo),
     imageUrl: 'https://www.kyochon.com/uploadFiles/TB_ITEM/list_레드.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/list_레드.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/레드한마리_list.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/레드오리지날.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/red.png',
+      'https://m.kyochon.com/uploadFiles/TB_ITEM/레드.jpg',
+      'https://www.kyochon.com/uploadFiles/PRODUCT/red-original.jpg',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/kyochon/red.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/kyochon/red-original.jpg',
+      'https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/kyochon-red.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/kyochon/red.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/kyochon-red.webp',
+    ],
   },
   {
     id: 'kyochon-honey-1',
@@ -844,6 +993,23 @@ export const menuItems: MenuItem[] = [
     nutrition: kyochonHoneyNutrition,
     healthScore: calculateHealthScore(kyochonHoneyNutrition),
     imageUrl: 'https://www.kyochon.com/uploadFiles/TB_ITEM/list_허니오리지날.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/list_허니오리지날.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/교촌-허니-오리.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/허니한마리.png',
+      'https://www.kyochon.com/uploadFiles/TB_ITEM/honey.png',
+      'https://m.kyochon.com/uploadFiles/TB_ITEM/허니오리지날.jpg',
+      'https://www.kyochon.com/uploadFiles/PRODUCT/honey-original.jpg',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/kyochon/honey.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/kyochon/honey-original.jpg',
+      'https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/kyochon-honey.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/kyochon/honey.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/kyochon-honey.webp',
+    ],
   },
   {
     id: 'puradak-toowoom-1',
@@ -851,5 +1017,20 @@ export const menuItems: MenuItem[] = [
     nutrition: puradakToowoomNutrition,
     healthScore: calculateHealthScore(puradakToowoomNutrition),
     imageUrl: 'https://puradakchicken.com/upload/menu/메뉴-35.png',
+    imageUrls: [
+      // 1. 공식 홈페이지
+      'https://puradakchicken.com/upload/menu/메뉴-35.png',
+      'https://puradakchicken.com/upload/menu/나폴리투움바.png',
+      'https://puradakchicken.com/upload/menu/toowoomba.jpg',
+      'https://www.puradakchicken.com/upload/menu/투움바.jpg',
+      'https://puradakchicken.com/upload/menu/napoli-toowoomba.png',
+      // 2. 쇼핑몰
+      'https://img.ssgcdn.com/trans.ssg?src=/cmpt/edit/puradak/toowoomba.jpg',
+      'https://gdimg.gmarket.co.kr/goods_image2/puradak/toowoomba.jpg',
+      // 3. 배달앱
+      'https://cdn-mart.baemin.com/puradak/toowoomba.jpg',
+      // 4. 나무위키
+      'https://i.namu.wiki/i/puradak-toowoomba.webp',
+    ],
   },
 ];

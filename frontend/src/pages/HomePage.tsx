@@ -4,6 +4,7 @@ import type { MenuItem } from '../types/nutrition';
 import NutritionModal from '../components/NutritionModal';
 import PieChart from '../components/PieChart';
 import ThemeToggle from '../components/ThemeToggle';
+import MenuImage from '../components/MenuImage';
 
 const HomePage = () => {
   const [selectedBrand, setSelectedBrand] = useState<string>('all');
@@ -164,28 +165,13 @@ const HomePage = () => {
               {/* Image */}
               <div className="relative h-48 overflow-hidden"
                    style={{ background: 'var(--gradient-primary)' }}>
-                {item.imageUrl ? (
-                  <img
-                    src={item.imageUrl}
-                    alt={item.nutrition.name}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      // 이미지 로드 실패 시 이모지로 fallback
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        const emoji = document.createElement('div');
-                        emoji.className = 'absolute inset-0 flex items-center justify-center';
-                        emoji.innerHTML = '<span class="text-7xl">🍗</span>';
-                        parent.appendChild(emoji);
-                      }
-                    }}
-                  />
-                ) : (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-7xl">🍗</span>
-                  </div>
-                )}
+                <MenuImage
+                  imageUrl={item.imageUrl}
+                  imageUrls={item.imageUrls}
+                  menuId={item.id}
+                  brandId={item.brandId}
+                  alt={item.nutrition.name}
+                />
                 {/* Health Score Badge */}
                 <div className="absolute top-4 right-4 px-4 py-2 rounded-full backdrop-blur-md"
                      style={{
